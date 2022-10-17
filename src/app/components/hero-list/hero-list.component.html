@@ -1,0 +1,63 @@
+<div class="hero-list-container">
+
+<div class="flex w-100">
+  <div class="flex w-70 js-start pl-20">
+    <div class="flex ai-center pr-20">
+    <button class="pointer" mat-fab  matTooltip="Reset filter" (click)="clearFilter()">
+      <mat-icon>clear</mat-icon>
+    </button>
+    </div>
+    <form>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Search a superhero" [formControl]="hero" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="flex w-30 jc-end">
+    <div class="flex ai-center pr-20">
+    <button class="pointer" mat-fab  matTooltip="Add SuperHero"  aria-label="Add SuperHero" (click)="addSuperHero()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+  </div>
+</div>
+
+  <table mat-table [dataSource]="dataSource">
+    
+    <ng-container matColumnDef="superhero">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">
+       {{element.superhero}}
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell  *matHeaderCellDef > Actions </th>
+      <td mat-cell *matCellDef="let row; let i = index">
+        <button class="pointer mr-10" mat-fab matTooltip="Edit SuperHero" (click)="editSuperHero(row,i)">
+          <mat-icon>create icon</mat-icon>
+        </button>
+        <button class="pointer" mat-fab  matTooltip="Delete SuperHero" (click)="deleteSuperHero(row,i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+  </table>
+  
+  <mat-paginator #paginator
+    [pageSize]="5"
+    [pageSizeOptions]="[5,10,15,20]"
+  >
+  </mat-paginator>
+
+</div>
+
+
+
+  

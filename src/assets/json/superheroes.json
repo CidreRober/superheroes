@@ -1,0 +1,82 @@
+[
+       {
+           "id": 1,
+           "superhero":"Batman" 
+       },
+       {
+           "id": 2,
+           "superhero":"Superman"
+       },
+       {
+           "id": 3,
+           "superhero":"Flash"
+       },
+       {
+           "id": 4,
+           "superhero":"Green Lantern"
+       },
+       {
+           "id": 5,
+           "superhero":"Green Arrow"
+       },
+       {
+           "id": 6,
+           "superhero":"Wonder Woman"
+       },
+       {
+           "id": 7,
+           "superhero":"Martian Manhunter"
+       },
+       {
+           "id": 8,
+           "superhero":"Robin/Nightwing"
+       },
+       {
+           "id": 9,
+           "superhero":"Blue Beetle"
+       },
+       {
+           "id": 10,
+           "superhero":"Black Canary"
+       },
+       {
+           "id": 11,
+           "superhero":"Spider Man"
+       },
+       {
+           "id": 12,
+           "superhero":"Captain America"
+       },
+       {
+           "id": 13,
+           "superhero":"Iron Man"
+       },
+       {
+           "id": 14,
+           "superhero":"Thor"
+       },
+       {
+           "id": 15,
+           "superhero":"Hulk"
+       },
+       {
+           "id": 16,
+           "superhero":"Wolverine"
+       },
+       {
+           "id": 17,
+           "superhero":"Daredevil"
+       },
+       {
+           "id": 18,
+           "superhero":"Hawkeye"
+       },
+       {
+           "id": 19,
+           "superhero":"Cyclops"
+       },
+       {
+           "id": 20,
+           "superhero":"Silver Surfer"
+       }
+]

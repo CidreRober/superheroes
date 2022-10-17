@@ -1,0 +1,32 @@
+<ng-container *ngIf="!showDeleteDialog">
+    <h2 mat-dialog-title>{{operation}}</h2>
+
+    <mat-dialog-content [formGroup]="form">
+        <mat-form-field>
+            <input appTitleCase matInput
+                    placeholder="Name"
+                   formControlName="superhero">
+        </mat-form-field>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions>
+        <button matDialogClose class="mat-raised-button"(click)="close()">Close</button>
+        <button class="mat-raised-button mat-primary"(click)="save()" [disabled]="!form.valid">Save</button>
+    </mat-dialog-actions>
+</ng-container>
+
+<ng-container *ngIf="showDeleteDialog">
+
+    <h2 mat-dialog-title>{{operation}}</h2>
+
+    <mat-dialog-content [formGroup]="form">
+        <span>Are you sure you want to delete <b>{{superhero}}</b> ?</span>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions>
+        <button matDialogClose class="mat-raised-button"(click)="close()">Close</button>
+        <button class="mat-raised-button mat-primary"(click)="save()" [disabled]="!form.valid">Delete</button>
+    </mat-dialog-actions>
+
+</ng-container>
+

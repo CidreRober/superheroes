@@ -1,0 +1,8 @@
+.mat-dialog-actions {
+    justify-content: space-between;
+}
+
+.mat-raised-button:disabled {
+    background-color: lightgrey;
+    color: black;
+}
